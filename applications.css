@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Varta", sans-serif;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0px 0.75rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+header {
+  background: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
+  width: 100%;
+  height: 500px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0rem;
+  border-bottom: 2px solid rgba(243, 244, 246, 0.25);
+}
+.navbar__button {
+  color: #1F2937;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding: 1rem 2.00375rem 1rem 1.9375rem;
+  border-radius: 624.9375rem;
+  border: none;
+  opacity: 0.75;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar__logo {
+  background-image: url("./img/Logo.svg");
+  width: 11.42562rem;
+  height: 2.5rem;
+}
+.navbar__link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: all 0.1s ease-in-out;
+}
+.navbar__link:hover {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+.navbar__link:active {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+.navbar__burger {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.burger {
+  display: none;
+}
+@media (max-width: 860px) {
+  .burger {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navbar__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.box {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 27px;
+}
+
+.burger_span {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background-color: #9D174D;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+@media (max-width: 860px) {
+  .navbar__menu {
+    display: none;
+    position: absolute;
+  }
+}
+
+.navbar__menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Висота лінії */
+  background: #000; /* Колір лінії */
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Час анімації */
+}
+
+.navbar__burger__label__block {
+  display: flex;
+}
+
+.burger_label {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  left: 24px;
+}
+
+.burger_bottom {
+  margin-bottom: 5px;
+}
+
+#myCheckbox:checked ~ .navbar__menu {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  flex-direction: column;
+  opacity: 1;
+  animation: fade-in 1s ease-in-out;
+}
+
+#myCheckbox:checked ~ .navbar__menu::after {
+  opacity: 0;
+}
+
+#myCheckbox:not(:checked) ~ .navbar__menu {
+  animation: fade-out 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+nav .box:checked ~ .a {
+  color: green;
+  font-size: 36px;
+}
+
+nav .box:checked ~ .b {
+  color: rgb(128, 36, 0);
+  font-size: 36px;
+}/*# sourceMappingURL=applications.css.map */
