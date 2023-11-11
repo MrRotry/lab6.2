@@ -191,7 +191,7 @@ header {
     align-items: center;
     top: 100%;
     width: 100%;
-    left: -2px;
+    left: -1px;
     flex-direction: column;
   }
 }
