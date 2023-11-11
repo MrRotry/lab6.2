@@ -34,6 +34,9 @@ header {
         background-image: url('./img/Logo.svg');
         width: 11.42562rem;
         height: 2.5rem;
+        @media (max-width: 860px) {
+            scale: 0.72507;
+        }
     }
 
     &__link {

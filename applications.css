@@ -88,6 +88,11 @@ header {
   width: 11.42562rem;
   height: 2.5rem;
 }
+@media (max-width: 860px) {
+  .navbar__logo {
+    scale: 0.72507;
+  }
+}
 .navbar__link {
   display: block;
   padding: 0.5rem 1rem;
