@@ -38,6 +38,7 @@ a {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0px 0.75rem;
 }
 
 .grid {
@@ -189,6 +190,7 @@ header {
     display: flex;
     align-items: center;
     top: 100%;
+    left: -1px;
     flex-direction: column;
   }
 }
