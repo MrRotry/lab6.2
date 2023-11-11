@@ -83,11 +83,7 @@ header {
 }
 
 .box {
-    position: relative;
-    height: 1.5rem;
-    width: 1.5rem;
-    left: 27px;
-    //opacity: 0;
+    display: none;
 }
 
 .burger_span {
@@ -116,9 +112,17 @@ header {
     margin-bottom: 5px;
 }
 
-@keyframes fadeOut {
-    from {opacity: 1; visibility: visible;}
-    to {opacity: 0; visibility: hidden;}
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(0, -10%, 0);
+    }
 }
 
 @keyframes fadeIn {
@@ -129,40 +133,29 @@ header {
 .navbar__menu {
     display: flex;
     align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-    animation: fadeOut 2s forwards;
     height: 100px;
     @media (max-width:860px) {
         position: absolute;
         display: flex;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    flex-direction: column;
-    opacity: 1;
-    visibility: visible;
+        align-items: center; 
+        top: 100%;
+
+        flex-direction: column;
+    }
+}
+
+#myCheckbox:not(:checked) ~ .navbar__menu {
+    @media (max-width:860px) {
+        animation: fadeOutUp 0.3s ease-in-out forwards;
     }
 }
 
 #myCheckbox:checked ~ .navbar__menu {
-    animation: fadeIn 1s ease-in-out;
+    @media (max-width:860px) {
+        animation: fadeIn 1s ease-in-out;
+    }
 }
 
 
 
 
-
-
-
-
-nav .box:checked ~ .a {
-    color: green;
-    font-size: 36px;
-}
-
-nav .box:checked ~ .b {
-    color: rgb(128, 36, 0);
-    font-size: 36px;
-}
