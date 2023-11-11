@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap");
 *, *::after, *::before {
   box-sizing: border-box;
@@ -145,31 +144,6 @@ header {
   background-color: #9D174D;
 }
 
-.navbar__menu {
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-@media (max-width: 860px) {
-  .navbar__menu {
-    display: none;
-    position: absolute;
-  }
-}
-
-.navbar__menu::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px; /* Висота лінії */
-  background: #000; /* Колір лінії */
-  opacity: 1;
-  transition: opacity 0.5s ease-out; /* Час анімації */
-}
-
 .navbar__burger__label__block {
   display: flex;
 }
@@ -186,40 +160,52 @@ header {
   margin-bottom: 5px;
 }
 
-#myCheckbox:checked ~ .navbar__menu {
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.navbar__menu {
   display: flex;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  flex-direction: column;
-  opacity: 1;
-  animation: fade-in 1s ease-in-out;
-}
-
-#myCheckbox:checked ~ .navbar__menu::after {
+  align-items: center;
   opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  animation: fadeOut 2s forwards;
+  height: 100px;
+}
+@media (max-width: 860px) {
+  .navbar__menu {
+    position: absolute;
+    display: flex;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
-#myCheckbox:not(:checked) ~ .navbar__menu {
-  animation: fade-out 1s ease-in-out;
+#myCheckbox:checked ~ .navbar__menu {
+  animation: fadeIn 1s ease-in-out;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 nav .box:checked ~ .a {
   color: green;
   font-size: 36px;

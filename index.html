@@ -6,24 +6,22 @@
     <link rel="stylesheet" href="./applications.css">
     <title>LabWork6</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
                 <a href="#" class="navbar__logo"></a>
-                
-                    <input type="checkbox" class="box" id="myCheckbox">
-                    <div class="navbar__burger__label__block">
-                        <label class="burger_label" for="myCheckbox"></label>
-                        <div class="navbar__burger">
-                            <span class="burger_span burger_bottom"></span>
-                            <span class="burger_span burger_bottom"></span>
-                            <span class="burger_span"></span>
-                        </div>
+                <input type="checkbox" class="box" id="myCheckbox">
+                <div class="navbar__burger__label__block">
+                    <label class="burger_label" for="myCheckbox"></label>
+                    <div class="navbar__burger">
+                        <span class="burger_span burger_bottom"></span>
+                        <span class="burger_span burger_bottom"></span>
+                        <span class="burger_span"></span>
                     </div>
-                
-
-                <div class="navbar__menu">
+                </div>
+                <div class="navbar__menu" id="navbarMenu">
                     <a href="#" class="navbar__link">Active</a>
                     <a href="#" class="navbar__link">link</a>
                     <a href="#" class="navbar__link">link</a>
@@ -31,13 +29,23 @@
                 </div>  
             </div>
         </nav>
-    </header>
     <main>
 
     </main>
     <footer>
 
     </footer>
-
+    <script>
+        document.getElementById('myCheckbox').addEventListener('change', function() {
+            var menu = document.getElementById('navbarMenu');
+            if(this.checked) {
+                menu.style.animation = 'fadeIn 1s ease-in-out';
+                menu.style.opacity = 1;
+                menu.style.visibility = 'visible';
+            } else {
+                menu.style.animation = 'fadeOut 2s forwards';
+            }
+        });
+    </script>
 </body>
 </html>
