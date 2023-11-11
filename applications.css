@@ -142,7 +142,12 @@ header {
 }
 
 .navbar__burger__label__block {
-  display: flex;
+  display: none;
+}
+@media (max-width: 860px) {
+  .navbar__burger__label__block {
+    display: flex;
+  }
 }
 
 .burger_label {
@@ -157,6 +162,26 @@ header {
   margin-bottom: 5px;
 }
 
+@media (max-width: 860px) {
+  .navbar__link {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-bottom: 1.88rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .navbar__link:hover {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding-bottom: 1.88rem;
+  }
+}
+
 @keyframes fadeOutUp {
   from {
     opacity: 1;
@@ -166,7 +191,7 @@ header {
   to {
     opacity: 0;
     visibility: hidden;
-    transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -2%, 0);
   }
 }
 @keyframes fadeIn {
@@ -182,17 +207,26 @@ header {
 .navbar__menu {
   display: flex;
   align-items: center;
-  height: 100px;
 }
 @media (max-width: 860px) {
   .navbar__menu {
     position: absolute;
     display: flex;
     align-items: center;
+    height: 18.125rem;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(7.5px);
+            backdrop-filter: blur(7.5px);
     top: 100%;
     width: 100%;
     left: -1px;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 860px) {
+  .navbar__link__first {
+    padding-top: 2.25rem;
   }
 }
 
