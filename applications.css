@@ -21,6 +21,11 @@ html {
     font-size: 7px;
   }
 }
+@media (max-width: 560px) {
+  html {
+    font-size: 6px;
+  }
+}
 
 body {
   margin: 0;
