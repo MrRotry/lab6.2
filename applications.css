@@ -250,6 +250,7 @@ a {
   height: 176px;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .header_container {
   display: flex;
@@ -318,14 +319,21 @@ a {
 }
 
 .main {
-  height: 53.0625rem;
-  padding: 4rem 28rem 4.0625rem 28rem;
   width: 100%;
+  /*main_block_2*/
+  /*main section3*/
+}
+.main_section_1 {
+  width: 100%;
+  border-bottom: 1px solid #E5E7EB;
+  background: #FFF;
 }
 .main_block_1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #FFF;
+  padding: 4rem 0 5.56rem;
 }
 .main_title_block {
   display: flex;
@@ -412,4 +420,311 @@ a {
 }
 .main_text_block_2_sectioin_1 {
   padding-left: 5.42rem;
+}
+.main_section_2 {
+  width: 100%;
+  border-bottom: 1px solid #E5E7EB;
+  background: #FFF;
+}
+.main_block_2 {
+  display: flex;
+  flex-direction: column;
+  height: 35.3125rem;
+  padding: 3.5rem 0rem 2.0625rem 0rem;
+}
+.main_cads_block {
+  display: flex;
+}
+.main_card {
+  width: 29rem;
+  margin: 1.5rem;
+}
+.main_card_h3 {
+  color: #4B5563;
+  font-family: "Varta", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  padding: 0rem 4rem 0rem 1.5rem;
+}
+.main_card_h2 {
+  color: #1F2937;
+  font-family: "Varta", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  padding: 0rem 4rem 0rem 1.5rem;
+}
+.main_card_text {
+  color: #1F2937;
+  font-family: "Varta", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 0rem 4rem 0rem 1.5rem;
+}
+.main_card_text_block {
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.main_card_button_block_1 {
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 3rem 0rem 3rem 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.main_card_button_block_2 {
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+.main_card_button_block_3 {
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 3rem 1.5rem 3rem 0rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.main_card_button {
+  padding: 1rem 2.00375rem 1rem 1.9375rem;
+  color: #FFF;
+  border-radius: 624.9375rem;
+  background: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+.main_section_3 {
+  width: 100%;
+  height: 50.75rem;
+  background: #F3F4F6;
+}
+.main_prices_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_prices_title_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.main_prices_h2 {
+  color: #1F2937;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+.main_prices_hr {
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  opacity: 0.25;
+  background: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
+  width: 16rem;
+  height: 0.25rem;
+}
+.main_prices_card_section {
+  display: flex;
+}
+.main_prices_card_block {
+  height: 34.25rem;
+  width: 23.75rem;
+  background-color: #ce6868;
+  padding-top: 2.5rem;
+}
+.main_prices_card_block_center {
+  width: 31.66625rem;
+}
+.main_prices_card {
+  width: 100%;
+  background-color: #FFF;
+}
+.main_prices_card_titel_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_prices_card_title {
+  width: 100%;
+  color: #4B5563;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem;
+  padding: 2rem 0rem 2.25rem 0rem;
+  border-bottom: 4px solid #E5E7EB;
+}
+.main_prices_card_shadow {
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding-bottom: 2.06rem;
+}
+.main_prices_card_text {
+  color: #4B5563;
+  border-bottom: 1px solid #E5E7EB;
+  padding: 1rem 0rem 1.0625rem 0rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+.main_prices_card_cost {
+  color: #4B5563;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem 0 1.5rem;
+}
+.main_prices_card_cure {
+  color: #4B5563;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+.main_prices_card_cure_2 {
+  position: relative;
+  top: -5px;
+  left: 3px;
+}
+.main_prices_button {
+  color: #FFF;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding: 1rem 1.93938rem 1rem 2rem;
+  border-radius: 624.9375rem;
+  background: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 3rem;
+}
+
+.footer {
+  width: 100%;
+  color: #000;
+}
+.footer_frame {
+  width: 100%;
+  background-image: url("./img/footer.svg");
+  background-size: cover;
+  height: 12.25813rem;
+}
+.footer_block {
+  background: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
+  height: 34.152rem;
+}
+.footer_block_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_h2 {
+  padding-top: 2rem;
+  color: #FFF;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  padding-bottom: 0.5rem;
+}
+.footer_hr {
+  width: 16rem;
+  height: 0.25rem;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  opacity: 0.25;
+  background: #FFF;
+}
+.footer_h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0.94rem 0rem 2.53rem;
+  line-height: 2.34375rem; /* 125% */
+}
+.footer_button {
+  color: #1F2937;
+  padding: 1rem 1.96875rem 1rem 2rem;
+  border-radius: 624.9375rem;
+  background: #FFF;
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  font-family: "Varta", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 150% */
+}
+.footer_link {
+  background-image: url("./img/Link.svg");
+  background-repeat: no-repeat;
+  width: 11.42562rem;
+  height: 2.8125rem;
+}
+.footer_block_2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+.footer_liks_main {
+  color: #6B7280;
+  font-family: "Varta", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  text-transform: uppercase;
+}
+.footer_liks_second {
+  color: #1F2937;
+  padding: 1.5rem 0;
+  font-family: "Varta", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+.footer_liks_second_element {
+  padding-bottom: 0.5rem;
 }/*# sourceMappingURL=applications.css.map */
