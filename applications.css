@@ -6,6 +6,21 @@
 html {
   font-size: 16px;
 }
+@media (max-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 680px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 680px) {
+  html {
+    font-size: 7px;
+  }
+}
 
 body {
   margin: 0;
@@ -81,6 +96,7 @@ a {
   background-image: url("./img/Logo.svg");
   width: 11.42562rem;
   height: 2.5rem;
+  background-size: cover;
 }
 @media (max-width: 860px) {
   .navbar__logo {
@@ -258,6 +274,16 @@ a {
   margin: 0 auto;
   padding: 2.8rem 12.09063rem 1.5rem 0.75rem;
 }
+@media (max-width: 1500px) {
+  .header_container {
+    padding: 2.8rem 5.09063rem 1.5rem 0.75rem;
+  }
+}
+@media (max-width: 1400px) {
+  .header_container {
+    padding: 2.8rem 0rem 1.5rem 0.75rem;
+  }
+}
 .header_text_block {
   display: flex;
   flex-direction: column;
@@ -273,6 +299,18 @@ a {
   background-size: cover;
   background-position: center;
   scale: 1;
+}
+@media (max-width: 1400px) {
+  .header_hero_block {
+    width: 22.875rem;
+    height: 19.74rem;
+  }
+}
+@media (max-width: 1180px) {
+  .header_hero_block {
+    width: 22.875rem;
+    height: 19.74rem;
+  }
 }
 .header_h1 {
   color: #fff;
@@ -316,6 +354,9 @@ a {
   background: #FFF;
   border: none;
   box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.header_block_2 {
+  padding: 0rem 14rem 1.5rem 14rem;
 }
 
 .main {
@@ -439,6 +480,11 @@ a {
   width: 29rem;
   margin: 1.5rem;
 }
+@media (max-width: 1180px) {
+  .main_card {
+    margin: 0.5rem;
+  }
+}
 .main_card_h3 {
   color: #4B5563;
   font-family: "Varta", sans-serif;
@@ -533,6 +579,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 3.75rem;
+  padding-top: 3.5rem;
 }
 .main_prices_hr {
   border-radius: 0.25rem 0.25rem 0rem 0rem;
@@ -550,8 +597,28 @@ a {
   width: 23.75rem;
   padding-top: 2.5rem;
 }
+@media (max-width: 1280px) {
+  .main_prices_card_block {
+    width: 19rem;
+  }
+}
+@media (max-width: 1180px) {
+  .main_prices_card_block {
+    width: 15.45rem;
+  }
+}
 .main_prices_card_block_center {
   width: 31.66625rem;
+}
+@media (max-width: 1280px) {
+  .main_prices_card_block_center {
+    width: 25.333rem;
+  }
+}
+@media (max-width: 1180px) {
+  .main_prices_card_block_center {
+    width: 18.99975rem;
+  }
 }
 .main_prices_card {
   width: 100%;
@@ -780,6 +847,7 @@ a {
 .footer_link {
   background-image: url("./img/Link.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 11.42562rem;
   height: 2.8125rem;
 }
