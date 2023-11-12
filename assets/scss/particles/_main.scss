@@ -319,6 +319,10 @@
             background: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
             width: 16rem;
             height: 0.25rem;
+            @media (max-width:780px) {
+                margin-bottom: 7rem;
+            }
+            
         }
 
         &_card_section {
