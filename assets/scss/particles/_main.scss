@@ -1,4 +1,112 @@
 .main {
-    height: 500px;
+    height: 53.0625rem;
+    padding: 4rem 28rem 4.0625rem 28rem;
     width: 100%;
+
+
+    &_block_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_title_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_title {
+        color: #1F2937;
+        text-align: center;
+        font-family: $font;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.75rem;
+        
+    }
+
+    &_title_line{
+        width: 16rem;
+        height: 0.25rem;
+        border-radius: 0.25rem 0.25rem 0rem 0rem;
+        opacity: 0.25;
+        background: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
+    }
+
+    &_h2 {
+        color: #1F2937;
+        font-family: $font;
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.875rem;
+        padding-top: 1.25rem;;
+    }
+
+    &_text {
+        width: 27.83875rem;
+        color: #4B5563;
+        font-family: $font;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        padding: 0.5rem 0rem 1.75rem 0rem; 
+    }
+
+    &_text_2 {
+        color: #4B5563;
+        font-family: $font;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem
+    }
+    
+    &_text_link {
+        color: #EC4899;
+        font-family: $font;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-decoration-line: underline
+    }
+
+    &_text_block_image_1 {
+        width: 29rem;
+        height: 16rem;
+        background-image: url('./img/info.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 1.25rem;
+    }
+
+    &_text_block_image_2 {
+        width: 24.16625rem;
+        height: 16rem;
+        background-image: url('./img/map.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }   
+    
+    &_text_block_1 {
+        display: flex;
+        padding-top: 1rem;
+    }
+
+    &_text_block_2 {
+        display: flex;
+        padding-top: 3rem;
+    }
+
+    &_text_block_1_sectioin_1 {
+       padding-right: 1.5rem;
+    }
+
+    &_text_block_2_sectioin_1 {
+        padding-left: 5.42rem;
+    }
 }
